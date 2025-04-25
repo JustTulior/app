@@ -1,0 +1,18 @@
+<h1> </h1>
+
+@for (user of users; track user.id){
+    <table class = "table">
+        <thead>
+            <tr>   
+                <th> id пользователя</th>
+                <th> Логин пользователя</th>
+                <th> Пароль пользователя</th>
+            </tr>
+        </thead>
+        <tbody>
+    <td><div> {{user.id}}</div></td>
+    <td><div> {{user.login}}</div> </td>
+    <td> <div> {{user.password}} </div> </td>
+    </tbody>
+    </table>
+}

@@ -1,0 +1,19 @@
+
+<nav class="menu">
+    <div class="developer-status"><strong>Keycloak Events:</strong> {{ keycloakStatus }}</div>
+  
+    <div class="actions">
+      <a routerLink="/" class="action-item">Home</a>
+      
+     
+      @if (!authenticated) {
+        <button class="action-item" (click)="login()">Login</button>
+
+      } @else {
+        <a routerLink="/users" class="action-item">Users from DB</a>
+        <a routerLink="/shops" class="action-item"> Shops</a>
+        <button class="action-item" (click)="logout()">Logout</button>
+        
+      }
+    </div>
+  </nav>

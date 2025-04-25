@@ -1,0 +1,18 @@
+<h1>Магазинчики</h1>
+
+@for (shop of Shops; track shop.id){
+    <table class = "table">
+        <thead>
+            <tr>   
+                <th> id магазина</th>
+                <th> Название магазина</th>
+                <th> Адрес магазина</th>
+            </tr>
+        </thead>
+        <tbody>
+    <td><div> {{shop.id}}</div></td>
+    <td><div> {{shop.name}}</div> </td>
+    <td> <div> {{shop.address}} </div> </td>
+    </tbody>
+    </table>
+}

@@ -19,7 +19,9 @@
     "@angular/router": "^19.2.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.15.0"
+    "zone.js": "~0.15.0",
+    "keycloak-js": "^26.1.5",
+    "keycloak-angular": "^19.0.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.2.8",
@@ -34,4 +36,5 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.7.2"
   }
+  
 }
