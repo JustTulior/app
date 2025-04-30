@@ -1,14 +1,14 @@
 .menu {
     display: flex;
     justify-content: space-between;
-    background: #e1e1e1;
+    background:linear-gradient( to top, #e66465 , to bottom #9198e5 20%);
     padding: 10px;
     color: #3c3c3c;
     align-items: center;
   }
   
   .developer-status {
-    border-color: #f0ad4e;
+    border-color:  #0bc9e2;
     border-style: dotted;
     border-width: medium;
     width: fit-content;
@@ -27,12 +27,21 @@
   }
   
   a.action-item {
-    color: #3c3c3c;
+    color: black;
     text-decoration: none;
+    font-size: 20px;
   }
   
   a.action-item:hover {
     background: #bfbfbf;
     border-radius: 5px;
+  }
+  button{
+    background: linear-gradient( lightgreen , pink);
+  }
+  .action-item{
+    color: black;
+    font-style: normal;
+    font-size: 15px;
   }
   

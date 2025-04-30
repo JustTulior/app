@@ -1,0 +1,18 @@
+
+
+<form [formGroup]="shopForm" (ngSubmit)="onSubmit()" *ngIf="shopForm">
+    
+    <div>
+      <label>Имя магазина:</label>
+      <input formControlName="name">
+    </div>
+  <h2></h2>
+    <div>
+      <label>Адрес магазина:</label>
+      <input formControlName="address">
+    </div>
+    <h2></h2>
+    <button type="submit" >Создать</button>
+    <h2></h2>
+    <button type="reset"> Очистить поля</button>
+  </form>

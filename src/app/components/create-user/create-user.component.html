@@ -1,0 +1,19 @@
+
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()" *ngIf="userForm">
+    
+    <div>
+      <label>Логин пользователя:</label>
+      <input formControlName="login">
+    </div>
+  <h3></h3>
+    <div>
+      <label>Пароль:</label>
+      <input formControlName="password">
+      <h2></h2>
+    </div>
+    <button type="submit" >Создать</button>
+    <h2></h2>
+    <button type="reset"> Очистить поля</button>
+    
+  </form>

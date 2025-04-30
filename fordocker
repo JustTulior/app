@@ -1,0 +1,42 @@
+# services:
+
+
+
+
+#   postgres:
+#     image: postgres:16.8
+#     environment:
+#       POSTGRES_USER: admin
+#       POSTGRES_PASSWORD: admin
+#       POSTGRES_DB: test
+#       PGDATA: var/lib/postgresql/data/postgres
+#     volumes:
+#       - ./pgdata:/var/lib/postgresql/data/postgres
+#     ports:
+#       - 5432:5432
+
+#   keycloak:
+#     image: quay.io/keycloak/keycloak:26.1.5 
+    
+#     environment:
+#       KEYCLOAK_ADMIN: admin
+#       KEYCLOAK_ADMIN_PASSWORD: admin
+#       KC_DB: postgres
+#       KC_DB_URL: jdbc:postgresql://postgres/test
+#       KC_DB_USERNAME: admin
+#       KC_DB_PASSWORD: admin
+#       KC_DB_URL_PORT: 5432
+#     volumes:
+#       - ./config/:/opt/keycloak/data/import:ro
+#     ports:
+#       - 8080:8080
+#     command: ["start-dev", "--import-realm"]
+
+#создай папку dockerangular, добавь в него файл docker-compose.yml и закинь туда то, что написано выше
+
+
+# доабвь pgdata если не будет то жопа
+
+#затем создай папку config, в ней файл keycloak-angular-sandbox-realm.json и закинь то, что написано в файле config.txt
+
+# docker compose up -d

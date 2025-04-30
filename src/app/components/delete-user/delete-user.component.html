@@ -1,0 +1,12 @@
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()" *ngIf="userForm">
+    
+    <div>
+      <label>id Пользователя</label>
+      <input formControlName="id">
+    </div>
+  <h2></h2>
+    <button type="submit" >Удалить</button>
+    <h2></h2>
+    <button type="reset"> Очистить поле</button>
+  </form>

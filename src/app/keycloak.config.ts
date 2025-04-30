@@ -9,7 +9,7 @@ import {
 } from 'keycloak-angular';
 
 const localhostCondition = createInterceptorCondition<IncludeBearerTokenCondition>({
-  urlPattern: /^(http:\/\/localhost:8181)(\/.*)?$/i });
+  urlPattern: /^(http :\/\/localhost:8181)(\/.*)?$/i });
 
 const localhostCondition1 = createInterceptorCondition<IncludeBearerTokenCondition>({
     urlPattern: /^(http:\/\/localhost:5047)(\/.*)?$/i

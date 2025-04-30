@@ -10,8 +10,13 @@
         <button class="action-item" (click)="login()">Login</button>
 
       } @else {
-        <a routerLink="/users" class="action-item">Users from DB</a>
+        <a routerLink="/create-shop" class="action-item">Add new shop!</a>
+        
         <a routerLink="/shops" class="action-item"> Shops</a>
+        
+        <a routerLink="/create-user" class = "action-item"> Create User!</a>
+        <a routerLink="/delete-user" class = "action-item"> Delete User!</a>
+        <a routerLink="/users" class="action-item">Users from DB</a> 
         <button class="action-item" (click)="logout()">Logout</button>
         
       }
